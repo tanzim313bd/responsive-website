@@ -442,7 +442,10 @@ nav .menu ul li a{
     #contact .heading {
     padding-top: 70px;
     padding-bottom: 70px;
-}
+    }
+    #contact .contact_form input:nth-child(1), #contact .contact_form input:nth-child(2) {
+    width: 480px;
+    }
     #contact .contact_form input:nth-child(3), #contact .contact_form input:nth-child(4) {
         width: 570px;
     }
