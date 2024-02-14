@@ -1,0 +1,456 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+ul,ol{
+    list-style: none;
+}
+nav{
+    background-color: #02918b;
+}
+.container{
+    width: 1170px;
+  margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-center{
+    align-items: center;
+}
+.heading{
+ text-align: center;
+}
+.heading h2{
+    color: #02918c;
+    font-weight: 800;
+    font-size: 46px;
+   
+}
+.heading p{
+    color: #7e8287;
+    font-size: 16px;
+    line-height: 41px ;
+    
+}
+nav .logo{
+    width: 40%;
+}
+nav .menu{
+    width: 60%;
+    text-align: right; 
+}
+nav .menu ul li{
+    display: inline-block;
+}
+nav .menu ul li a{
+    color: white;
+    font-weight: 800;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 26px 25px;
+    display: block;
+}
+/* Banner */
+#banner{
+   
+    background-image:linear-gradient(rgba(0,0,0,0.64), rgba(0,0,0,0.64)) ,url(../images/banner.jpg);
+    height: 727px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#banner .row{
+    height: 727px;
+}
+
+#banner .banner_cnt{
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+#banner .banner_cnt h6{
+    font-size: 30px;
+    font-weight: 400;
+}
+#banner .banner_cnt h1{
+    font-size: 68px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+}
+#banner .banner_cnt img{
+    margin: 50px 0;
+}
+#banner .banner_cnt a{
+    background-color: #cfc91d;
+    color: #0b1016;
+    font-weight: 800;
+    font-size: 14px;
+    padding: 20px 42px;
+    display: inline-block;
+}
+
+
+.heading p strong{
+    font-size: 23px;
+}
+#about .heading p {
+    padding:  0 137px;
+
+}
+#about .heading{
+    padding-top: 97px;
+    padding-bottom: 120px;
+}
+#about .row{
+    padding-bottom: 157px;
+}
+#about .about_card{
+    width: 25%;
+    border-right: 1px solid #CACFD2;
+    padding: 37px 60px;
+    color: #7e8287;
+    
+}
+#about .about_card h3{
+    padding: 30px 0;
+ 
+}
+#about .about_card:last-child{
+    border-right: none;
+}
+.text-center{
+    text-align: center;
+}
+#service {
+    background-image: url(./../images/MYFOLIO\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 74px 0;
+}
+#service .inner_container{
+    width: 50%;
+}
+#service .heading{
+    text-align: left;
+    
+}
+#service .service_card h3{
+    padding: 22px 0;
+}
+#service .service_card{
+    width: 50%;
+    padding-right: 110px;
+    margin-top: 56px;
+    color: #7e8287;
+}
+#mywork .heading p{
+    padding: 0 237px;
+}
+#mywork .heading{
+    padding-top: 111px;
+    padding-bottom: 81px;
+}
+#mywork .mywork_card{
+    width: 25%;
+    position: relative;
+}
+#mywork .mywork_card img{
+    width: 100%;
+    height: 100%;
+}
+#mywork .mywork_card .overlay{
+    position: absolute;
+    background-color: rgba(2, 145, 140, 0.85);
+    inset: 20px 28px;
+    transform: scale(0);
+    transition:.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    color: #ffffff;
+}
+
+#mywork .mywork_card .overlay h4{
+    padding-bottom:18px ;
+  font-size: 16px;
+}
+#mywork .mywork_card .overlay p{
+    font-size: 13px;
+}
+#mywork .mywork_card:hover .overlay{
+   transform: scale(1);
+   
+}
+#contact .heading p {
+    padding: 0 237px;
+}
+#contact .heading{
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+#contact .contact_form{
+    background-color: #0a0a0b;
+}
+#contact .contact_form input{
+    display: block;
+    margin: 0 auto;
+    background: none;
+    padding: 18px;
+    text-align: center;
+    color: #7e8287;
+    border: none;
+    border-bottom: 1px solid #7e8287;
+    margin-bottom: 51px;
+}
+#contact .contact_form input:focus{
+    outline: none;
+    border-bottom-color:#02918b ;
+    transition: 1s;
+}
+#contact .contact_form input:nth-child(1),
+#contact .contact_form input:nth-child(2){
+    width: 640px;
+}
+#contact .contact_form input:nth-child(3),
+#contact .contact_form input:nth-child(4){
+    width: 920px;
+}
+.button{
+    background-color: #cfc91d;
+    color: #0b1016;
+    font-weight: 800;
+    font-size: 14px;
+    padding: 20px 65px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/*media querry */
+@media (min-width:1400px){
+
+}
+@media (min-width:1200px) and (max-width:1399.99px){
+
+}
+@media (min-width:992px) and (max-width:1199.99px){
+    .container {
+        width: 940px;      
+    }
+#banner .banner_cnt h1 {
+    font-size: 60px;
+    letter-spacing: 20px;
+}
+#about .heading p {
+    padding: 0px 25px;
+}
+#about .about_card {
+    padding: 37px 20px;
+}
+#service .service_card {
+    padding-right: 35px;
+}
+#mywork .heading p {
+    padding: 0px 100px;
+}
+#contact .heading p {
+    padding: 0 100px;
+}
+
+}
+
+
+@media (min-width:768px) and (max-width:991.99px){
+    .container {
+        width: 720px;      
+    }
+    nav .menu ul li a {
+        font-size: 12px;
+        padding: 26px 11px;
+    }
+    #banner .banner_cnt h1 {
+        font-size: 50px;
+        letter-spacing: 13px;
+    }
+    #banner .banner_cnt h6 {
+        font-size: 21px;
+    }
+    #banner .banner_cnt p{
+        font-size: 13px;
+    }
+    #banner .banner_cnt a {
+        font-size: 11px;
+        padding: 16px 25px;
+    }
+    #about .heading p {
+        padding: 0 40px;
+    }
+    #about .heading {
+        padding-top: 75px;
+        padding-bottom: 100px;
+    }
+    .heading p {
+        font-size: 11px;
+        line-height: 38px;
+    }
+    .heading h2 {
+        font-size: 37px;
+    }
+    .heading p strong {
+        font-size: 18px;
+    }
+    #about .about_card {
+        padding: 33px 16px;
+    }
+    #service .service_card {
+        padding-right: 10px;
+        font-size: 12px;
+    }
+    #mywork .heading p {
+        padding: 0px 68px;
+        font-size: 10px;
+    }
+    #mywork .heading {
+        padding-top: 98px;
+        padding-bottom: 80px;
+    }
+    .heading h2 {
+        font-size: 30px;
+    }
+    #contact .heading p {
+        padding: 0px 68px;
+    }
+    #contact .heading p {
+        font-size: 10px;
+        line-height: 35px;
+    }
+    #contact  .heading h2 {
+        font-size: 25px;
+    }
+    #contact .contact_form input:nth-child(3), #contact .contact_form input:nth-child(4) {
+        width: 730px;
+    }
+    .button {
+        font-size: 12px;
+        padding: 15px 45px;
+    }
+}
+
+
+
+@media (min-width:576px) and (max-width:767.99px){
+    .container {
+        width: 550px;      
+    }
+    nav .menu ul li a {
+        font-size: 10px;
+        padding: 26px 6px;
+    }
+    #banner {
+        height: 420px;
+    }
+    #banner .row {
+        height: 500px;
+    }
+    #banner .banner_cnt h1 {
+        font-size: 35px;
+        letter-spacing: 11px;
+    }
+    #banner .banner_cnt h6 {
+        font-size: 16px;
+    }
+    #banner .banner_cnt p{
+        font-size: 11px;
+    }
+    #banner .banner_cnt a {
+        font-size: 9px;
+        padding: 15px 25px;
+    }
+    #about .heading p {
+        padding: 0 58px;
+    }
+    .heading p {
+        color: #7e8287;
+        font-size: 9px;
+        line-height: 26px;
+    }
+    .heading p strong {
+        font-size: 8px;
+    }
+    .heading h2 {
+        color: #02918c;
+        font-weight: 800;
+        font-size: 25px;
+    }
+    #about .heading {
+        padding-top: 75px;
+        padding-bottom: 90px;
+    }
+    #about .about_card {
+        width: 50%;
+        padding: 37px 35px;
+        font-size: 13px;
+    }
+    #about .about_card h3 {
+        padding: 24px 0;
+    }
+    .heading p {
+        font-size: 8px;
+        line-height: 22px;
+    }
+    #service .service_card {
+        padding-right: 10px;
+        font-size: 12px;
+    }
+    #mywork .heading p {
+        padding: 0px 68px;
+        font-size: 10px;
+    }
+    #mywork .heading {
+        padding-top: 98px;
+        padding-bottom: 80px;
+    }
+    #mywork .heading {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    #contact .heading {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    #contact .heading p {
+        padding: 0px 68px;
+    }
+    #contact .heading p {
+        font-size: 10px;
+        line-height: 35px;
+    }
+    #contact  .heading h2 {
+        font-size: 25px;
+    }
+    #contact .heading {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+    #contact .contact_form input:nth-child(3), #contact .contact_form input:nth-child(4) {
+        width: 570px;
+    }
+    .button {
+        font-size: 14px;
+        padding: 10px 38px
+    }
+}
+@media (min-width:0px) and (max-width:575.99px){
+    
+}
